@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DynamicBatchRename"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="650" Width="1200">
     <StackPanel Orientation="Vertical">
         <StackPanel Orientation="Horizontal" Height="40" >
             <Button x:Name="StartBatch" Background="White" BorderBrush="White" Click="StartBatch_Click">
@@ -128,7 +128,7 @@
                                         </Button>
                                     </ToolBar>
                                     <ToolBar Height="30" Background="White" Margin="20,0,-15,0" HorizontalAlignment="Center">
-                                        <Button Click="btnSelect_Click">Select</Button>
+                                        <Button Click="btnUncheckAll_Click">Uncheck All</Button>
                                         <Image Source="/Images/grey_line_png.png"  Width="20" ></Image>
                                         <Button Click="btnSelectAll_Click">Select All</Button>
                                         <Image Source="/Images/grey_line_png.png"  Width="20" ></Image>
@@ -151,9 +151,9 @@
                                                 </DataTemplate>
                                             </GridViewColumn.CellTemplate>
                                         </GridViewColumn>
-                                        <GridViewColumn Header="Name" Width="275" DisplayMemberBinding="{Binding Name}"/>
-                                        <GridViewColumn Header="New Name" Width="275" DisplayMemberBinding="{Binding NewName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-                                        <GridViewColumn Header="Path" Width="275" DisplayMemberBinding="{Binding path}"/>
+                                        <GridViewColumn Header="Name" Width="155" DisplayMemberBinding="{Binding Name}"/>
+                                        <GridViewColumn Header="New Name" Width="155" DisplayMemberBinding="{Binding NewName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                                        <GridViewColumn Header="Path" Width="100" DisplayMemberBinding="{Binding path}"/>
                                         <GridViewColumn Header="Status" Width="275" DisplayMemberBinding="{Binding Status}"/>
                                     </GridView>
                                 </ListView.View>
@@ -182,7 +182,7 @@
                                         </Button>
                                     </ToolBar>
                                     <ToolBar Height="30" Background="White" Margin="20,0,-15,0" HorizontalAlignment="Center">
-                                        <Button  Click="btnSelect_Click">Select</Button>
+                                        <Button  Click="btnUncheckAll_Click">Uncheck All</Button>
                                         <Image Source="/Images/grey_line_png.png"  Width="20" ></Image>
                                         <Button Click="btnSelectAll_Click">Select All</Button>
                                         <Image Source="/Images/grey_line_png.png"  Width="20" ></Image>

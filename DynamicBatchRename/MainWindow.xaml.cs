@@ -217,14 +217,30 @@ namespace DynamicBatchRename
             }
         }
 
-        private void btnSelect_Click(object sender, RoutedEventArgs e)
+        private void btnUncheckAll_Click(object sender, RoutedEventArgs e)
         {
+            foreach (text file in files)
+            {
+                file.isChecked = false;
+            }
 
+            foreach (text file in folders)
+            {
+                file.isChecked = false;
+            }
         }
 
         private void btnSelectAll_Click(object sender, RoutedEventArgs e)
         {
+            foreach(text file in files)
+            {
+                file.isChecked = true;
+            }
 
+            foreach (text file in folders)
+            {
+                file.isChecked = true;
+            }
         }
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
@@ -261,6 +277,15 @@ namespace DynamicBatchRename
                 }
             }
 
+            foreach (text file in files)
+            {
+                if (file.isChecked)
+                {
+                    string currentName_path = file.path + @"\" + file.Name;
+                    string newName_path = file.path + @"\" + file.NewName;
+                    File.Move(currentName_path, newName_path);
+                }
+            }
 
 
         }
@@ -319,5 +344,7 @@ namespace DynamicBatchRename
         {
 
         }
+
+        
     }
 }
