@@ -118,4 +118,10 @@
     <ProjectReference Include="..\IRenameRules\IRenameRules.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Rules\ConvertPascalCase.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

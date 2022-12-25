@@ -90,7 +90,32 @@ namespace DynamicBatchRename
 
         private void Refresh_Click(object sender, RoutedEventArgs e)
         {
-
+            foreach(text file in files)
+            {
+                string currentFolder_path = file.path;
+                string newPath = currentFolder_path + $"/{file.NewName}";
+                if (File.Exists(newPath))
+                {
+                    file.Name = file.NewName;
+                }
+                else
+                {
+                    //eat else
+                }
+            }
+            foreach (text file in folders)
+            {
+                string currentFolder_path = file.path;
+                string newPath = currentFolder_path + $"/{file.NewName}";
+                if (File.Exists(newPath))
+                {
+                    file.Name = file.NewName;
+                }
+                else
+                {
+                    //eat else
+                }
+            }
         }
 
         private void Help_Click(object sender, RoutedEventArgs e)
@@ -105,13 +130,21 @@ namespace DynamicBatchRename
 
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
-            PrototypeName = "NAME";
-            currentRules_stack.Clear();
-            foreach(Rules rule in rules) {
-                ListViewItem ListIteminstance = ListRules.ItemContainerGenerator.ContainerFromItem(rule)
-                as ListViewItem;
+            try
+            {
+                PrototypeName = "NAME";
+                currentRules_stack.Clear();
+                foreach (Rules rule in rules)
+                {
+                    ListViewItem ListIteminstance = ListRules.ItemContainerGenerator.ContainerFromItem(rule)
+                    as ListViewItem;
 
-                ListIteminstance.Background = Brushes.White;
+                    ListIteminstance.Background = Brushes.White;
+                }
+            }
+            catch
+            {
+                //eat exception
             }
         }
 
@@ -293,6 +326,7 @@ namespace DynamicBatchRename
                 }
             }
 
+            MessageBox.Show("Rename Successfully!");
 
         }
 

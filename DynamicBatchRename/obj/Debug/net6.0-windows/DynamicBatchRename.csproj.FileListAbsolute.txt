@@ -50,3 +50,4 @@ D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\DynamicBat
 D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\DynamicBatchRename\bin\Debug\net6.0-windows\Rules\ReplaceSpecialCharacter.dll
 D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\DynamicBatchRename\obj\Debug\net6.0-windows\DynamicBatchRename.csproj.Fody.CopyLocal.cache
 D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\DynamicBatchRename\obj\Debug\net6.0-windows\DynamicBatchRename.csproj.Fody.RuntimeCopyLocal.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\DynamicBatchRename\bin\Debug\net6.0-windows\Rules\ConvertPascalCase.dll
