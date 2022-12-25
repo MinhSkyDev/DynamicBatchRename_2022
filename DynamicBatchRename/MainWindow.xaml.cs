@@ -107,6 +107,12 @@ namespace DynamicBatchRename
         {
             PrototypeName = "NAME";
             currentRules_stack.Clear();
+            foreach(Rules rule in rules) {
+                ListViewItem ListIteminstance = ListRules.ItemContainerGenerator.ContainerFromItem(rule)
+                as ListViewItem;
+
+                ListIteminstance.Background = Brushes.White;
+            }
         }
 
         private void Folder_Click(object sender, RoutedEventArgs e)
@@ -313,13 +319,31 @@ namespace DynamicBatchRename
         private void ListRules_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             int currentRulesIndex = ListRules.SelectedIndex;
-            //this.Title = rules[currentRulesIndex].Name;
-            PrototypeName = rules[currentRulesIndex].rule.stringPrototype() + PrototypeName;
+
+            var dataObject = ListRules.Items[currentRulesIndex];
+            ListViewItem ListIteminstance = ListRules.ItemContainerGenerator.ContainerFromItem(dataObject)
+                as ListViewItem;
+
+            if (ListIteminstance.Background != Brushes.LightGreen)
+            {
+                //this.Title = rules[currentRulesIndex].Name;
+                PrototypeName = rules[currentRulesIndex].rule.stringPrototype() + PrototypeName;
 
 
-            IRenameRules currentRules = rules[currentRulesIndex].getRule();
-            currentRules_stack.Push(currentRules);
-            
+                IRenameRules currentRules = rules[currentRulesIndex].getRule();
+                string rule_name = rules[currentRulesIndex].Name;
+                currentRules_stack.Push(currentRules);
+
+                string message = $"Rules {rule_name} added successfully";
+                MessageBox.Show(message);
+
+                ListIteminstance.Background = Brushes.LightGreen;
+            }
+            else
+            {
+                MessageBox.Show("This rules has been added !");
+            }
+
         }
 
 

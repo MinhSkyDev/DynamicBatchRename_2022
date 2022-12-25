@@ -133,10 +133,7 @@
                                         <Button Click="btnSelectAll_Click">Select All</Button>
                                         <Image Source="/Images/grey_line_png.png"  Width="20" ></Image>
                                         <Button Click="btnClear_Click">Clear</Button>
-                                        <Image Source="/Images/grey_line_png.png"  Width="20" ></Image>
-                                        <Button Click="btnChange_Click">Change</Button>
-                                        <Image Source="/Images/grey_line_png.png"  Width="20" ></Image>
-                                        <Button Click="btnBrowse_Click">Browse...</Button>
+                                      
                                     </ToolBar>
                                 </ToolBarTray>
                             </StackPanel>
