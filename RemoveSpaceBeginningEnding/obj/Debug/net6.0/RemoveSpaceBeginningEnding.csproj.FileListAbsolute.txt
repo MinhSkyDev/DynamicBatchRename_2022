@@ -1,0 +1,15 @@
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\RemoveSpaceBeginningEnding\bin\Debug\net6.0\RemoveSpaceBeginningEnding.deps.json
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\RemoveSpaceBeginningEnding\bin\Debug\net6.0\RemoveSpaceBeginningEnding.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\RemoveSpaceBeginningEnding\bin\Debug\net6.0\RemoveSpaceBeginningEnding.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\RemoveSpaceBeginningEnding\bin\Debug\net6.0\IRenameRules.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\RemoveSpaceBeginningEnding\bin\Debug\net6.0\IRenameRules.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\RemoveSpaceBeginningEnding\obj\Debug\net6.0\RemoveSpaceBeginningEnding.csproj.AssemblyReference.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\RemoveSpaceBeginningEnding\obj\Debug\net6.0\RemoveSpaceBeginningEnding.GeneratedMSBuildEditorConfig.editorconfig
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\RemoveSpaceBeginningEnding\obj\Debug\net6.0\RemoveSpaceBeginningEnding.AssemblyInfoInputs.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\RemoveSpaceBeginningEnding\obj\Debug\net6.0\RemoveSpaceBeginningEnding.AssemblyInfo.cs
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\RemoveSpaceBeginningEnding\obj\Debug\net6.0\RemoveSpaceBeginningEnding.csproj.CoreCompileInputs.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\RemoveSpaceBeginningEnding\obj\Debug\net6.0\RemoveSpaceBeginningEnding.csproj.CopyComplete
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\RemoveSpaceBeginningEnding\obj\Debug\net6.0\RemoveSpaceBeginningEnding.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\RemoveSpaceBeginningEnding\obj\Debug\net6.0\refint\RemoveSpaceBeginningEnding.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\RemoveSpaceBeginningEnding\obj\Debug\net6.0\RemoveSpaceBeginningEnding.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\RemoveSpaceBeginningEnding\obj\Debug\net6.0\ref\RemoveSpaceBeginningEnding.dll

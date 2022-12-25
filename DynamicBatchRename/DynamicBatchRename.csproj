@@ -1,0 +1,121 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\add_icon.png" />
+    <None Remove="Images\add_method_icon.png" />
+    <None Remove="Images\backspace_icon.png" />
+    <None Remove="Images\browse_icon.png" />
+    <None Remove="Images\down_icon.png" />
+    <None Remove="Images\down_line_icon.png" />
+    <None Remove="Images\folder_icon.png" />
+    <None Remove="Images\grey_line_hor.png" />
+    <None Remove="Images\grey_line_png.png" />
+    <None Remove="Images\help_icon.png" />
+    <None Remove="Images\line_icon.png" />
+    <None Remove="Images\refresh_icon.png" />
+    <None Remove="Images\run_icon.png" />
+    <None Remove="Images\save_icon.png" />
+    <None Remove="Images\up_icon.png" />
+    <None Remove="Images\up_line_icon.png" />
+    <None Remove="Images\x_icon.png" />
+    <None Remove="Rules\AddCounter.dll" />
+    <None Remove="Rules\AddPostFix.dll" />
+    <None Remove="Rules\AddPrefixRules.dll" />
+    <None Remove="Rules\ConvertLowercaseAndRemoveSpace.dll" />
+    <None Remove="Rules\IRenameRules.dll" />
+    <None Remove="Rules\RemoveSpaceBeginningEnding.dll" />
+    <None Remove="Rules\ReplaceSpecialCharacter.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\add_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\add_method_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\backspace_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\browse_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\down_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\down_line_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\folder_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\grey_line_hor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\grey_line_png.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\help_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\line_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\refresh_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\run_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\save_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\up_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\up_line_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\x_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Rules\AddCounter.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Rules\AddPostFix.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Rules\AddPrefixRules.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Rules\ConvertLowercaseAndRemoveSpace.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Rules\IRenameRules.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Rules\RemoveSpaceBeginningEnding.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Rules\ReplaceSpecialCharacter.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ookii.Dialogs.Wpf" Version="5.0.1" />
+    <PackageReference Include="PropertyChanged.Fody" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IRenameRules\IRenameRules.csproj" />
+  </ItemGroup>
+
+</Project>

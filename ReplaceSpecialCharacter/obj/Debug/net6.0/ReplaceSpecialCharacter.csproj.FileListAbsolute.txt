@@ -1,0 +1,15 @@
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ReplaceSpecialCharacter\bin\Debug\net6.0\ReplaceSpecialCharacter.deps.json
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ReplaceSpecialCharacter\bin\Debug\net6.0\ReplaceSpecialCharacter.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ReplaceSpecialCharacter\bin\Debug\net6.0\ReplaceSpecialCharacter.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ReplaceSpecialCharacter\bin\Debug\net6.0\IRenameRules.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ReplaceSpecialCharacter\bin\Debug\net6.0\IRenameRules.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ReplaceSpecialCharacter\obj\Debug\net6.0\ReplaceSpecialCharacter.csproj.AssemblyReference.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ReplaceSpecialCharacter\obj\Debug\net6.0\ReplaceSpecialCharacter.GeneratedMSBuildEditorConfig.editorconfig
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ReplaceSpecialCharacter\obj\Debug\net6.0\ReplaceSpecialCharacter.AssemblyInfoInputs.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ReplaceSpecialCharacter\obj\Debug\net6.0\ReplaceSpecialCharacter.AssemblyInfo.cs
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ReplaceSpecialCharacter\obj\Debug\net6.0\ReplaceSpecialCharacter.csproj.CoreCompileInputs.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ReplaceSpecialCharacter\obj\Debug\net6.0\ReplaceSpecialCharacter.csproj.CopyComplete
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ReplaceSpecialCharacter\obj\Debug\net6.0\ReplaceSpecialCharacter.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ReplaceSpecialCharacter\obj\Debug\net6.0\refint\ReplaceSpecialCharacter.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ReplaceSpecialCharacter\obj\Debug\net6.0\ReplaceSpecialCharacter.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ReplaceSpecialCharacter\obj\Debug\net6.0\ref\ReplaceSpecialCharacter.dll

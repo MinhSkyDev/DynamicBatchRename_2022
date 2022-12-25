@@ -1,0 +1,15 @@
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertLowercaseAndRemoveSpace\bin\Debug\net6.0\ConvertLowercaseAndRemoveSpace.deps.json
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertLowercaseAndRemoveSpace\bin\Debug\net6.0\ConvertLowercaseAndRemoveSpace.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertLowercaseAndRemoveSpace\bin\Debug\net6.0\ConvertLowercaseAndRemoveSpace.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertLowercaseAndRemoveSpace\bin\Debug\net6.0\IRenameRules.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertLowercaseAndRemoveSpace\bin\Debug\net6.0\IRenameRules.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertLowercaseAndRemoveSpace\obj\Debug\net6.0\ConvertLowercaseAndRemoveSpace.csproj.AssemblyReference.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertLowercaseAndRemoveSpace\obj\Debug\net6.0\ConvertLowercaseAndRemoveSpace.GeneratedMSBuildEditorConfig.editorconfig
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertLowercaseAndRemoveSpace\obj\Debug\net6.0\ConvertLowercaseAndRemoveSpace.AssemblyInfoInputs.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertLowercaseAndRemoveSpace\obj\Debug\net6.0\ConvertLowercaseAndRemoveSpace.AssemblyInfo.cs
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertLowercaseAndRemoveSpace\obj\Debug\net6.0\ConvertLowercaseAndRemoveSpace.csproj.CoreCompileInputs.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertLowercaseAndRemoveSpace\obj\Debug\net6.0\ConvertLowercaseAndRemoveSpace.csproj.CopyComplete
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertLowercaseAndRemoveSpace\obj\Debug\net6.0\ConvertLowercaseAndRemoveSpace.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertLowercaseAndRemoveSpace\obj\Debug\net6.0\refint\ConvertLowercaseAndRemoveSpace.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertLowercaseAndRemoveSpace\obj\Debug\net6.0\ConvertLowercaseAndRemoveSpace.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertLowercaseAndRemoveSpace\obj\Debug\net6.0\ref\ConvertLowercaseAndRemoveSpace.dll

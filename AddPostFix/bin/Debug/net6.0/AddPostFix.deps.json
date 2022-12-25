@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "AddPostFix/1.0.0": {
+        "dependencies": {
+          "IRenameRules": "1.0.0"
+        },
+        "runtime": {
+          "AddPostFix.dll": {}
+        }
+      },
+      "IRenameRules/1.0.0": {
+        "runtime": {
+          "IRenameRules.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AddPostFix/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IRenameRules/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

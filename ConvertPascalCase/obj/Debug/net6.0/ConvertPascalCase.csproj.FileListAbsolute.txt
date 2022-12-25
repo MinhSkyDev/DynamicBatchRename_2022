@@ -1,0 +1,15 @@
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertPascalCase\bin\Debug\net6.0\ConvertPascalCase.deps.json
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertPascalCase\bin\Debug\net6.0\ConvertPascalCase.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertPascalCase\bin\Debug\net6.0\ConvertPascalCase.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertPascalCase\bin\Debug\net6.0\IRenameRules.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertPascalCase\bin\Debug\net6.0\IRenameRules.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertPascalCase\obj\Debug\net6.0\ConvertPascalCase.csproj.AssemblyReference.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertPascalCase\obj\Debug\net6.0\ConvertPascalCase.GeneratedMSBuildEditorConfig.editorconfig
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertPascalCase\obj\Debug\net6.0\ConvertPascalCase.AssemblyInfoInputs.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertPascalCase\obj\Debug\net6.0\ConvertPascalCase.AssemblyInfo.cs
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertPascalCase\obj\Debug\net6.0\ConvertPascalCase.csproj.CoreCompileInputs.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertPascalCase\obj\Debug\net6.0\ConvertPascalCase.csproj.CopyComplete
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertPascalCase\obj\Debug\net6.0\ConvertPascalCase.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertPascalCase\obj\Debug\net6.0\refint\ConvertPascalCase.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertPascalCase\obj\Debug\net6.0\ConvertPascalCase.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ConvertPascalCase\obj\Debug\net6.0\ref\ConvertPascalCase.dll

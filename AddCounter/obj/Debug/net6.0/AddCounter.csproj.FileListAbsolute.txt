@@ -1,0 +1,15 @@
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\AddCounter\bin\Debug\net6.0\AddCounter.deps.json
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\AddCounter\bin\Debug\net6.0\AddCounter.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\AddCounter\bin\Debug\net6.0\AddCounter.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\AddCounter\bin\Debug\net6.0\IRenameRules.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\AddCounter\bin\Debug\net6.0\IRenameRules.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\AddCounter\obj\Debug\net6.0\AddCounter.csproj.AssemblyReference.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\AddCounter\obj\Debug\net6.0\AddCounter.GeneratedMSBuildEditorConfig.editorconfig
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\AddCounter\obj\Debug\net6.0\AddCounter.AssemblyInfoInputs.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\AddCounter\obj\Debug\net6.0\AddCounter.AssemblyInfo.cs
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\AddCounter\obj\Debug\net6.0\AddCounter.csproj.CoreCompileInputs.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\AddCounter\obj\Debug\net6.0\AddCounter.csproj.CopyComplete
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\AddCounter\obj\Debug\net6.0\AddCounter.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\AddCounter\obj\Debug\net6.0\refint\AddCounter.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\AddCounter\obj\Debug\net6.0\AddCounter.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\AddCounter\obj\Debug\net6.0\ref\AddCounter.dll

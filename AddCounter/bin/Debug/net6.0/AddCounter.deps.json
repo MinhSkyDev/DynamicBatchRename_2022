@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "AddCounter/1.0.0": {
+        "dependencies": {
+          "IRenameRules": "1.0.0"
+        },
+        "runtime": {
+          "AddCounter.dll": {}
+        }
+      },
+      "IRenameRules/1.0.0": {
+        "runtime": {
+          "IRenameRules.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AddCounter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IRenameRules/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
