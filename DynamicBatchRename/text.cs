@@ -13,7 +13,7 @@ namespace DynamicBatchRename
         public string NewName { get; set; }
         public long Size { get; set; }
         public DateTime Status { get; set; }
-        public string path;
+        public string path { get; set; }
         public bool isChecked { get; set; }
 
         public event PropertyChangedEventHandler? PropertyChanged;

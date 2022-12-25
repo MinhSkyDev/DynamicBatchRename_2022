@@ -153,7 +153,7 @@
                                         </GridViewColumn>
                                         <GridViewColumn Header="Name" Width="275" DisplayMemberBinding="{Binding Name}"/>
                                         <GridViewColumn Header="New Name" Width="275" DisplayMemberBinding="{Binding NewName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-                                        <GridViewColumn Header="Path" Width="275" DisplayMemberBinding="{Binding Size}"/>
+                                        <GridViewColumn Header="Path" Width="275" DisplayMemberBinding="{Binding path}"/>
                                         <GridViewColumn Header="Status" Width="275" DisplayMemberBinding="{Binding Status}"/>
                                     </GridView>
                                 </ListView.View>
@@ -207,7 +207,7 @@
                                         </GridViewColumn>
                                         <GridViewColumn Header="Name" Width="275" DisplayMemberBinding="{Binding Name}"/>
                                         <GridViewColumn Header="New Name" Width="275" DisplayMemberBinding="{Binding NewName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-                                        <GridViewColumn Header="Path" Width="275" DisplayMemberBinding="{Binding Size}"/>
+                                        <GridViewColumn Header="Path" Width="275" DisplayMemberBinding="{Binding path}"/>
                                         <GridViewColumn Header="Status" Width="275" DisplayMemberBinding="{Binding Status}"/>
                                     </GridView>
                                 </ListView.View>

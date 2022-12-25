@@ -251,6 +251,18 @@ namespace DynamicBatchRename
         private void StartBatch_Click(object sender, RoutedEventArgs e)
         {
 
+            foreach (text file in folders)
+            {
+                if (file.isChecked)
+                {
+                    string currentName_path = file.path +@"\"+file.Name;
+                    string newName_path = file.path + @"\" + file.NewName;
+                    File.Move(currentName_path, newName_path);
+                }
+            }
+
+
+
         }
 
         private void MenuItem_OnClick(object sender, RoutedEventArgs e)
