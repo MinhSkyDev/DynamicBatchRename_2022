@@ -19,7 +19,32 @@ namespace ReplaceSpecialCharacter
 
         public void parseData(string data)
         {
-            //Implement later
+            //Se co 2 truong hop, mot truong hop la tu file preset, mot truong hop la tu preview len
+            //Format file preset: ReplaceSpecialCharacter a b
+            //Format preview: {a,b}
+
+
+            //Chia case preview:
+            if (data.Contains(','))
+            {
+                //Input "a,b"
+                //preview
+
+                var data_split = data.Split(',');
+                CharacterNeedReplace= data_split[0];
+                CharacterReplaceBy = data_split[1];
+
+            }
+            else
+            {
+                //Input "a b"
+                //preset
+
+                var data_split = data.Split(' ');
+                CharacterNeedReplace = data_split[0];
+                CharacterReplaceBy = data_split[1];
+            }
+
         }
 
         public string Rename(string filename)
@@ -33,7 +58,7 @@ namespace ReplaceSpecialCharacter
 
         public string stringPrototype()
         {
-            return "";
+            return "{}";
         }
     }
 }
