@@ -16,7 +16,7 @@ namespace DynamicBatchRename
         public Rules(IRenameRules rule)
         {
             this.rule = rule;
-            this.Name = rule.getName();
+            this.Name = rule.getName() + rule.stringPrototype();
         }
 
         public object Clone()

@@ -14,7 +14,7 @@ namespace AddPostFix
 
         public string getName()
         {
-            return "AddPostFix<>";
+            return "AddPostFix";
         }
 
         public void parseData(string data)

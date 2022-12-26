@@ -21,7 +21,7 @@ namespace AddPrefixRules
 
         public string getName()
         {
-            return "AddPrefix []";
+            return "AddPrefix";
         }
 
         public object Clone()

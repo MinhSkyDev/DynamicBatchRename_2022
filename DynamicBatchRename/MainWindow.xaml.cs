@@ -146,7 +146,7 @@ namespace DynamicBatchRename
 
         }
 
-        private void Clear_Click(object sender, RoutedEventArgs e)
+        private void clearRules()
         {
             try
             {
@@ -166,21 +166,94 @@ namespace DynamicBatchRename
             }
         }
 
+        private void updateRulesListView(IRenameRules current_rule)
+        {
+            try
+            {
+                foreach (Rules rule in rules)
+                {
+                    if (current_rule.getName().Equals(rule.rule.getName()))
+                    {
+                        ListViewItem ListIteminstance = ListRules.ItemContainerGenerator.ContainerFromItem(rule)
+                        as ListViewItem;
+
+                        ListIteminstance.Background = Brushes.LightGreen;
+                    }
+                }
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+            clearRules();
+        }
+
+        private void updatePreset(List<String> lines) {
+
+            clearRules();
+
+            foreach (String line in lines)
+            {
+                var line_split = line.Split(' ');
+                string ruleName = line_split[0];
+                ruleName = ruleName.Replace("\r", string.Empty);
+                string data = "";
+                for (int i = 1; i < line_split.Length; i++)
+                {
+                    if (i == line_split.Length - 1)
+                    {
+                        data += line_split[i];
+                    }
+                    else
+                    {
+                        data += line_split[i] + " ";
+                    }
+                }
+                IRenameRules newRule = RuleFactory.createRules(ruleName);
+                newRule.parseData(data);
+                
+
+                string prototype = newRule.stringPrototype();
+
+                updatePreviewPrototypeFromPreset(prototype, data);
+                updateRulesListView(newRule);
+                currentRules_stack.Push(newRule);
+            }
+            
+        }
+
+        private void updatePreviewPrototypeFromPreset(string prototype, string data)
+        {
+            string prototype_add = "";
+            if (!prototype.Equals(""))
+            {
+                data = data.Replace(' ', ',');
+                data = data.Replace("\n", string.Empty);
+                data = data.Replace("\r", string.Empty);
+                prototype_add = prototype[0] + data + prototype[1];
+            }
+
+            PrototypeName = prototype_add + PrototypeName;
+        }
+
         private void Folder_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog preset_taker_dialog = new OpenFileDialog();
             preset_taker_dialog.Filter = "TXT files|*.txt";
-
+            string allLines = "";
             if (preset_taker_dialog.ShowDialog() == true)
             {
-               FileStream fs = (FileStream) preset_taker_dialog.OpenFile();
-               var readStream = new StreamReader(fs);
-               string line = readStream.ReadToEnd();
-                MessageBox.Show(line);
+                FileStream fs = (FileStream) preset_taker_dialog.OpenFile();
+                var readStream = new StreamReader(fs);
+                allLines = readStream.ReadToEnd();
+
             }
-
-
-
+            List<String> lines_parsed = presetReader.parsePreset(allLines);
+            updatePreset(lines_parsed);
         }
 
         private void Preview_Click(object sender, RoutedEventArgs e)

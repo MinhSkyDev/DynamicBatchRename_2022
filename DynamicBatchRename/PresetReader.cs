@@ -26,11 +26,10 @@ namespace DynamicBatchRename
             return instance;
         }
 
-        public List<String> parsePreset(string uri)
+        public List<String> parsePreset(string rulesData)
         {
-
-            string[] rulesData = File.ReadAllLines(uri);
-            List<String> lines = new List<String>(rulesData);
+             
+            List<String> lines = new List<String>(rulesData.Split('\n'));
             return lines;
         }
 
