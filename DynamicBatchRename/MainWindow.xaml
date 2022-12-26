@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DynamicBatchRename"
         mc:Ignorable="d"
-        Title="MainWindow" Height="650" Width="1200">
+        Title="MainWindow" Height="650" Width="1200" Loaded="Window_Loaded" Closing="Window_Closing">
     <StackPanel Orientation="Vertical">
         <StackPanel Orientation="Horizontal" Height="40" >
             <Button x:Name="StartBatch" Background="White" BorderBrush="White" Click="StartBatch_Click">
@@ -165,7 +165,7 @@
                                     <ToolBar Height="30" Background="White" Margin="0,0,-15,0" >
                                         <Button Name="addFolder" Click="AddFolderButton_Click">
                                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                                                <Image Width="17" Height="17" Source="/Images/add_method_icon.png" />
+                                                <Image Width="17" Height="17" Source="/Images/add_icon.png" />
                                                 <TextBlock Width="26" FontSize="14" Height="25" Text="Add" Margin="5,0,0,0"/>
                                             </StackPanel>
                                         </Button>

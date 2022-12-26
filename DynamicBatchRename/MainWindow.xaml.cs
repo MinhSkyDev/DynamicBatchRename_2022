@@ -42,7 +42,25 @@ namespace DynamicBatchRename
         public Stack<IRenameRules> currentRules_stack = new Stack<IRenameRules>();
 
         public String PrototypeName { get; set; }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Left = DynamicBatchRename.Properties.Settings.Default.Left;
+            Top = DynamicBatchRename.Properties.Settings.Default.Top;
 
+            Width = DynamicBatchRename.Properties.Settings.Default.WindowWidth;
+            Height = DynamicBatchRename.Properties.Settings.Default.WindowHeight;
+        }
+
+        private void Window_Closing(object sender, CancelEventArgs e)
+        {
+            DynamicBatchRename.Properties.Settings.Default.Left = (int)Left;
+            DynamicBatchRename.Properties.Settings.Default.Top = (int)Top;
+
+            DynamicBatchRename.Properties.Settings.Default.WindowWidth = (int)Width;
+            DynamicBatchRename.Properties.Settings.Default.WindowHeight = (int)Height;
+
+            DynamicBatchRename.Properties.Settings.Default.Save();
+        }
         public void loadRules()
         {
             string rule_path = AppDomain.CurrentDomain.BaseDirectory;

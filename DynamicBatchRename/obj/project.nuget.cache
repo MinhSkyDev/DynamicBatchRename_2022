@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "StdbdjiI8VRGRFbMvUt2tS8n40Z3g3g5t6ejwC3TPQWlmFt+vfbh+P+JchXv27IvhJdH9nIK+zJH2cDZfMwNLw==",
+  "dgSpecHash": "jiykGTbW6Js1bqNIWXIdVtozRWpl7r0DD0O9KW8XEHgrUs+wt8RZvZGcB7hs4KEHSAPpAYk+6BePyIu5bPq8yA==",
   "success": true,
-  "projectFilePath": "D:\\K20 FIT HCMUS\\Ltrinh win Csharp\\Đồ án 1\\App\\DynamicBatchRename\\DynamicBatchRename\\DynamicBatchRename.csproj",
+  "projectFilePath": "D:\\Code\\LTW\\DynamicBatchRename_2022\\DynamicBatchRename\\DynamicBatchRename.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Laptop\\.nuget\\packages\\fody\\6.6.4\\fody.6.6.4.nupkg.sha512",
-    "C:\\Users\\Laptop\\.nuget\\packages\\ookii.dialogs.wpf\\5.0.1\\ookii.dialogs.wpf.5.0.1.nupkg.sha512",
-    "C:\\Users\\Laptop\\.nuget\\packages\\propertychanged.fody\\4.1.0\\propertychanged.fody.4.1.0.nupkg.sha512"
+    "C:\\Users\\thaim\\.nuget\\packages\\fody\\6.6.4\\fody.6.6.4.nupkg.sha512",
+    "C:\\Users\\thaim\\.nuget\\packages\\ookii.dialogs.wpf\\5.0.1\\ookii.dialogs.wpf.5.0.1.nupkg.sha512",
+    "C:\\Users\\thaim\\.nuget\\packages\\propertychanged.fody\\4.1.0\\propertychanged.fody.4.1.0.nupkg.sha512"
   ],
   "logs": []
 }

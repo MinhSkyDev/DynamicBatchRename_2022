@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Laptop\\.nuget\\packages\\": {}
+    "C:\\Users\\thaim\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\K20 FIT HCMUS\\Ltrinh win Csharp\\Đồ án 1\\App\\DynamicBatchRename\\ConvertLowercaseAndRemoveSpace\\ConvertLowercaseAndRemoveSpace.csproj",
+      "projectUniqueName": "D:\\Code\\LTW\\DynamicBatchRename_2022\\ConvertLowercaseAndRemoveSpace\\ConvertLowercaseAndRemoveSpace.csproj",
       "projectName": "ConvertLowercaseAndRemoveSpace",
-      "projectPath": "D:\\K20 FIT HCMUS\\Ltrinh win Csharp\\Đồ án 1\\App\\DynamicBatchRename\\ConvertLowercaseAndRemoveSpace\\ConvertLowercaseAndRemoveSpace.csproj",
-      "packagesPath": "C:\\Users\\Laptop\\.nuget\\packages\\",
-      "outputPath": "D:\\K20 FIT HCMUS\\Ltrinh win Csharp\\Đồ án 1\\App\\DynamicBatchRename\\ConvertLowercaseAndRemoveSpace\\obj\\",
+      "projectPath": "D:\\Code\\LTW\\DynamicBatchRename_2022\\ConvertLowercaseAndRemoveSpace\\ConvertLowercaseAndRemoveSpace.csproj",
+      "packagesPath": "C:\\Users\\thaim\\.nuget\\packages\\",
+      "outputPath": "D:\\Code\\LTW\\DynamicBatchRename_2022\\ConvertLowercaseAndRemoveSpace\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\thaim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +53,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\K20 FIT HCMUS\\Ltrinh win Csharp\\Đồ án 1\\App\\DynamicBatchRename\\IRenameRules\\IRenameRules.csproj": {
-              "projectPath": "D:\\K20 FIT HCMUS\\Ltrinh win Csharp\\Đồ án 1\\App\\DynamicBatchRename\\IRenameRules\\IRenameRules.csproj"
+            "D:\\Code\\LTW\\DynamicBatchRename_2022\\IRenameRules\\IRenameRules.csproj": {
+              "projectPath": "D:\\Code\\LTW\\DynamicBatchRename_2022\\IRenameRules\\IRenameRules.csproj"
             }
           }
         }

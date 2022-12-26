@@ -10,3 +10,15 @@ D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\IRenameRul
 D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\IRenameRules\obj\Debug\net6.0\refint\IRenameRules.dll
 D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\IRenameRules\obj\Debug\net6.0\IRenameRules.pdb
 D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\IRenameRules\obj\Debug\net6.0\ref\IRenameRules.dll
+D:\Code\LTW\DynamicBatchRename_2022\IRenameRules\bin\Debug\net6.0\IRenameRules.deps.json
+D:\Code\LTW\DynamicBatchRename_2022\IRenameRules\bin\Debug\net6.0\IRenameRules.dll
+D:\Code\LTW\DynamicBatchRename_2022\IRenameRules\bin\Debug\net6.0\IRenameRules.pdb
+D:\Code\LTW\DynamicBatchRename_2022\IRenameRules\obj\Debug\net6.0\IRenameRules.csproj.AssemblyReference.cache
+D:\Code\LTW\DynamicBatchRename_2022\IRenameRules\obj\Debug\net6.0\IRenameRules.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\LTW\DynamicBatchRename_2022\IRenameRules\obj\Debug\net6.0\IRenameRules.AssemblyInfoInputs.cache
+D:\Code\LTW\DynamicBatchRename_2022\IRenameRules\obj\Debug\net6.0\IRenameRules.AssemblyInfo.cs
+D:\Code\LTW\DynamicBatchRename_2022\IRenameRules\obj\Debug\net6.0\IRenameRules.csproj.CoreCompileInputs.cache
+D:\Code\LTW\DynamicBatchRename_2022\IRenameRules\obj\Debug\net6.0\IRenameRules.dll
+D:\Code\LTW\DynamicBatchRename_2022\IRenameRules\obj\Debug\net6.0\refint\IRenameRules.dll
+D:\Code\LTW\DynamicBatchRename_2022\IRenameRules\obj\Debug\net6.0\IRenameRules.pdb
+D:\Code\LTW\DynamicBatchRename_2022\IRenameRules\obj\Debug\net6.0\ref\IRenameRules.dll
