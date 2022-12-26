@@ -47,7 +47,11 @@ namespace DynamicBatchRename
         //Input vo se la mot chuoi duoc quy dinh tu file preset .txt
         public IRenameRules createRules(string data)
         {
-            IRenameRules result = (IRenameRules) dict[data].Clone();
+            IRenameRules result = null;
+            if (dict.ContainsKey(data))
+            {
+                result = (IRenameRules)dict[data].Clone();
+            }
             
             return result;
         }

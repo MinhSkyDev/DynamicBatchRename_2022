@@ -34,6 +34,7 @@ namespace DynamicBatchRename
 
         public ObservableCollection<text> files = new ObservableCollection<text>();
         public ObservableCollection<text> folders = new ObservableCollection<text>();
+        public ObservableCollection<Preset> presets = new ObservableCollection<Preset>();
         ObservableCollection<Rules> rules = new ObservableCollection<Rules>();
         PresetReader presetReader = PresetReader.getInstance();
         RulesFactory RuleFactory = RulesFactory.getInstance();
@@ -98,6 +99,7 @@ namespace DynamicBatchRename
             ListRules.ItemsSource = rules;
             PrototypeName = "NAME";
             PrototypeRulesTextBox.DataContext = this;
+            Presets.ItemsSource = presets;
 
         }
 
@@ -136,10 +138,7 @@ namespace DynamicBatchRename
             }
         }
 
-        private void Help_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+       
 
         private void Add_Method_Click(object sender, RoutedEventArgs e)
         {
@@ -192,6 +191,7 @@ namespace DynamicBatchRename
             clearRules();
         }
 
+        
         private void updatePreset(List<String> lines) {
 
             clearRules();
@@ -214,6 +214,11 @@ namespace DynamicBatchRename
                     }
                 }
                 IRenameRules newRule = RuleFactory.createRules(ruleName);
+                if(newRule == null)
+                {
+                    MessageBox.Show("This preset contains some of invalid rule!, Some of the valid rules will be added");
+                    return;
+                }
                 newRule.parseData(data);
                 
 
@@ -238,6 +243,7 @@ namespace DynamicBatchRename
             }
 
             PrototypeName = prototype_add + PrototypeName;
+            
         }
 
         private void Folder_Click(object sender, RoutedEventArgs e)
@@ -245,23 +251,35 @@ namespace DynamicBatchRename
             OpenFileDialog preset_taker_dialog = new OpenFileDialog();
             preset_taker_dialog.Filter = "TXT files|*.txt";
             string allLines = "";
+            FileInfo info = null;
             if (preset_taker_dialog.ShowDialog() == true)
             {
                 FileStream fs = (FileStream) preset_taker_dialog.OpenFile();
                 var readStream = new StreamReader(fs);
                 allLines = readStream.ReadToEnd();
+                info = new FileInfo(Path.GetFullPath(preset_taker_dialog.FileNames[0]));
 
             }
-            List<String> lines_parsed = presetReader.parsePreset(allLines);
-            updatePreset(lines_parsed);
+            else
+            {
+                return;
+            }
+
+            //Add preset into ObserveableList for easier control
+            string preset_name = info.Name;
+            string preset_path = info.FullName;
+            Preset preset = new Preset(preset_name, preset_path);
+            presets.Add(preset);
+            Presets.SelectedItem= preset;
+
         }
 
         private void Preview_Click(object sender, RoutedEventArgs e)
         {
             string current_prototype = new string(PrototypeName);
             Stack<IRenameRules> preview_stack = new Stack<IRenameRules>(currentRules_stack.Reverse());
-
-            while(preview_stack.Count != 0)
+            
+            while (preview_stack.Count != 0)
             {
                 IRenameRules currentRules = preview_stack.Pop();
                 string rule_prototype = currentRules.stringPrototype();
@@ -273,6 +291,12 @@ namespace DynamicBatchRename
 
                     int colon = current_prototype.IndexOf(rule_prototype_first) + 1;
                     int hash = current_prototype.IndexOf(rule_prototype_second, colon);
+                    if(colon == 0 || hash == -1)
+                    {
+                        //Colon == 0 vi` -1 +1 = 0
+                        MessageBox.Show("There are incorrections in the preview box!\n Please try to type it correctly");
+                        break;
+                    }
                     string result = current_prototype.Substring(colon, hash - colon);
                     current_prototype = current_prototype.Substring(hash + 1, current_prototype.Length - hash - 1);
 
@@ -280,7 +304,7 @@ namespace DynamicBatchRename
                 }
 
 
-                foreach(text file in files)
+                foreach (text file in files)
                 {
                     file.NewName = currentRules.Rename(file.NewName);
                 }
@@ -291,6 +315,8 @@ namespace DynamicBatchRename
                 }
 
             }
+            
+            
 
 
         }
@@ -401,10 +427,7 @@ namespace DynamicBatchRename
 
         }
 
-        private void txtPrefix_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
+        
 
         private void StartBatch_Click(object sender, RoutedEventArgs e)
         {
@@ -433,25 +456,27 @@ namespace DynamicBatchRename
 
         }
 
-        private void MenuItem_OnClick(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
 
         private void Presets_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            try
+            {
+                Preset currentPreset = (Preset)Presets.SelectedItem;
+                string path = currentPreset.uri;
+                var readStream = new StreamReader(path);
+                string allLines = readStream.ReadToEnd();
+                List<String> lines_parsed = presetReader.parsePreset(allLines);
+                updatePreset(lines_parsed);
+            }
+            catch
+            {
+                //eat exception
+            }
 
         }
 
-        private void Rule_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void RuleItem_OnClick(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
 
         private void ListRules_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
@@ -484,10 +509,7 @@ namespace DynamicBatchRename
         }
 
 
-        private void fileListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
+       
 
         private void fileListView_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
@@ -496,16 +518,23 @@ namespace DynamicBatchRename
 
         
 
+        private void ClearPreset_Click(object sender, RoutedEventArgs e)
+        {
+            Preset deletePreset = (Preset) Presets.SelectedItem;
+            Presets.ItemsSource = null;
+            presets.Remove(deletePreset);
+            Presets.ItemsSource = presets;
+            if(presets.Count != 0)
+            {
+                Presets.SelectedIndex = 0;
+            }
+        }
+
+        
+
         private void Save_Click(object sender, RoutedEventArgs e)
         {
 
         }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        
     }
 }
