@@ -150,6 +150,18 @@ namespace DynamicBatchRename
 
         private void Folder_Click(object sender, RoutedEventArgs e)
         {
+            OpenFileDialog preset_taker_dialog = new OpenFileDialog();
+            preset_taker_dialog.Filter = "TXT files|*.txt";
+
+            if (preset_taker_dialog.ShowDialog() == true)
+            {
+               FileStream fs = (FileStream) preset_taker_dialog.OpenFile();
+               var readStream = new StreamReader(fs);
+               string line = readStream.ReadToEnd();
+                MessageBox.Show(line);
+            }
+
+
 
         }
 
