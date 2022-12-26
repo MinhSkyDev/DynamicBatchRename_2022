@@ -21,6 +21,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using File = System.IO.File;
 using Path = System.IO.Path;
 
@@ -43,6 +45,44 @@ namespace DynamicBatchRename
         public Stack<IRenameRules> currentRules_stack = new Stack<IRenameRules>();
 
         public String PrototypeName { get; set; }
+
+        //Use when Window_loaded
+        private void loadPresetJson()
+        {
+            try
+            {
+                List<Preset> presets_list = new List<Preset>();
+
+                using (StreamReader r = new StreamReader("presetState.json"))
+                {
+                    string json = r.ReadToEnd();
+                    presets_list = JsonSerializer.Deserialize<List<Preset>>(json);
+                }
+
+                presets = new ObservableCollection<Preset>(presets_list);
+                Presets.ItemsSource = presets;
+
+                if(presets.Count != 0)
+                {
+                    Presets.SelectedIndex = 0;
+                }
+            }
+            catch
+            {
+                //eat exception
+            }
+
+        }
+
+        //Use when Window_close
+        private void writePresetJson()
+        {
+            List<Preset> presets_list = new List<Preset>(presets);
+            string json = JsonSerializer.Serialize(presets_list);
+            File.WriteAllText("presetState.json", json);
+        }
+
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             Left = DynamicBatchRename.Properties.Settings.Default.Left;
@@ -51,6 +91,8 @@ namespace DynamicBatchRename
             Width = DynamicBatchRename.Properties.Settings.Default.WindowWidth;
             Height = DynamicBatchRename.Properties.Settings.Default.WindowHeight;
         }
+
+       
 
         private void Window_Closing(object sender, CancelEventArgs e)
         {
@@ -61,6 +103,7 @@ namespace DynamicBatchRename
             DynamicBatchRename.Properties.Settings.Default.WindowHeight = (int)Height;
 
             DynamicBatchRename.Properties.Settings.Default.Save();
+            writePresetJson();
         }
         public void loadRules()
         {
@@ -100,7 +143,7 @@ namespace DynamicBatchRename
             PrototypeName = "NAME";
             PrototypeRulesTextBox.DataContext = this;
             Presets.ItemsSource = presets;
-
+            loadPresetJson();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
