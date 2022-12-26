@@ -259,7 +259,7 @@ namespace DynamicBatchRename
         private void Preview_Click(object sender, RoutedEventArgs e)
         {
             string current_prototype = new string(PrototypeName);
-            Stack<IRenameRules> preview_stack = new Stack<IRenameRules>(currentRules_stack);
+            Stack<IRenameRules> preview_stack = new Stack<IRenameRules>(currentRules_stack.Reverse());
 
             while(preview_stack.Count != 0)
             {
