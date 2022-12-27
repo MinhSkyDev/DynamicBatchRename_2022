@@ -76,14 +76,14 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5,5,0,0">
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center"  >
-                        <TextBlock Text="Preview Prototype " Margin="0,10,5,0"/>
-                        <TextBox Name="PrototypeRulesTextBox" Text="{Binding PrototypeName, NotifyOnSourceUpdated=True}" Height="25" Width="150" TextAlignment="Center" ></TextBox>
+                        <TextBlock Text="Preview Prototype " Margin="0,5,5,0"/>
+                        <TextBox Name="PrototypeRulesTextBox" Text="{Binding PrototypeName, NotifyOnSourceUpdated=True}" Height="25" Width="180" TextAlignment="Center" ></TextBox>
                     </StackPanel>
-                    <Image Source="/Images/grey_line_png.png"  Width="20" Margin="0,5,0,0" ></Image>
-                    <Button x:Name="Browse"  Background="White"  BorderBrush="YellowGreen" BorderThickness="2" Margin="5,0,0,0" Click="Preview_Click" Height="30" Width="103">
+                    <Image Source="/Images/grey_line_png.png"  Width="20" Margin="0,0,0,0" ></Image>
+                    <Button x:Name="Browse"  Background="White"  BorderBrush="YellowGreen" BorderThickness="2" Margin="0,0,0,0" Click="Preview_Click" Height="30" Width="90">
                         <StackPanel Orientation="Horizontal"  >
-                            <Image Source="/Images/browse_icon.png" Width="20" Margin="5,0,0,0"/>
-                            <TextBlock Text="Preview Preset" FontSize="10"  Margin="5"/>
+                            <Image Source="/Images/browse_icon.png" Width="20" Margin="0,0,0,0"/>
+                            <TextBlock Text="Preview Preset" FontSize="7"  Margin="5"/>
                         </StackPanel>
                     </Button>
                 </StackPanel>

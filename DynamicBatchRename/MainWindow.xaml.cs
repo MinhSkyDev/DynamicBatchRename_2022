@@ -26,6 +26,7 @@ using System.Text.Json.Serialization;
 using File = System.IO.File;
 using Path = System.IO.Path;
 
+
 namespace DynamicBatchRename
 {
     /// <summary>
@@ -64,7 +65,7 @@ namespace DynamicBatchRename
 
                 if(presets.Count != 0)
                 {
-                    Presets.SelectedIndex = 0;
+                    Presets.SelectedItem = presets[0];
                 }
             }
             catch
@@ -519,7 +520,16 @@ namespace DynamicBatchRename
 
         }
 
-        
+        private string removeBetween(string input, string start, string end)
+        {
+            string result = "";
+
+            int start_index = input.LastIndexOf(start) + start.Length;
+            int end_index = input.IndexOf(end, start_index);
+            result = input.Remove(start_index -1, end_index - start_index +2);
+
+            return result;
+        }
 
         private void ListRules_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
@@ -546,7 +556,32 @@ namespace DynamicBatchRename
             }
             else
             {
-                MessageBox.Show("This rules has been added !");
+                ListIteminstance.Background = Brushes.White;
+
+                //Thuật toán để loại bỏ một phần tử nằm ở giữa stack
+                Stack<IRenameRules> temp = new Stack<IRenameRules>();
+
+                IRenameRules currentRule = rules[currentRulesIndex].getRule();
+
+                while (!currentRule.getName().Equals(currentRules_stack.Peek().getName()))
+                {
+                    temp.Push(currentRules_stack.Pop());
+                }
+
+                currentRules_stack.Pop();
+
+                while(temp.Count != 0)
+                {
+                    currentRules_stack.Push(temp.Pop());
+                }
+
+                string stringPrototype = currentRule.stringPrototype();
+                if(stringPrototype != "")
+                {
+                    PrototypeName = removeBetween(PrototypeName, 
+                        Char.ToString(stringPrototype[0]), Char.ToString(stringPrototype[1]));
+                }
+
             }
 
         }
@@ -577,7 +612,19 @@ namespace DynamicBatchRename
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
+            string result = PresetReader.getInstance().parsePreset(PrototypeName,currentRules_stack);
+            SavePreset savePreset_screen = new SavePreset(result);
+           if(savePreset_screen.ShowDialog() == true)
+            {
+
+            }
+            else
+            {
+
+            }
 
         }
+
+        
     }
 }
