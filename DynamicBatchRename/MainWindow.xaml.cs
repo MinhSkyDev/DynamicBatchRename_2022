@@ -91,6 +91,8 @@ namespace DynamicBatchRename
 
             Width = DynamicBatchRename.Properties.Settings.Default.WindowWidth;
             Height = DynamicBatchRename.Properties.Settings.Default.WindowHeight;
+
+            loadPresetJson();
         }
 
        
@@ -144,7 +146,7 @@ namespace DynamicBatchRename
             PrototypeName = "NAME";
             PrototypeRulesTextBox.DataContext = this;
             Presets.ItemsSource = presets;
-            loadPresetJson();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -325,7 +327,7 @@ namespace DynamicBatchRename
             
             while (preview_stack.Count != 0)
             {
-                IRenameRules currentRules = preview_stack.Pop();
+                IRenameRules currentRules = (IRenameRules) preview_stack.Pop().Clone();
                 string rule_prototype = currentRules.stringPrototype();
 
                 if (rule_prototype != "")

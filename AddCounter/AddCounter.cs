@@ -9,6 +9,7 @@ namespace AddCounter
 
         public AddCounter()
         {
+            Counter = 0;
             //do nothing
         }
         public object Clone()
@@ -34,6 +35,7 @@ namespace AddCounter
             string counter = String.Format("{0:D2}", Counter);
             int index = filename.LastIndexOf('.'); //get index start extension
             newFilename = newFilename.Insert(index, counter);
+            Counter++;
             return newFilename;
         }
 
