@@ -322,46 +322,52 @@ namespace DynamicBatchRename
 
         private void Preview_Click(object sender, RoutedEventArgs e)
         {
-            string current_prototype = new string(PrototypeName);
-            Stack<IRenameRules> preview_stack = new Stack<IRenameRules>(currentRules_stack.Reverse());
-            
-            while (preview_stack.Count != 0)
+            try
             {
-                IRenameRules currentRules = (IRenameRules) preview_stack.Pop().Clone();
-                string rule_prototype = currentRules.stringPrototype();
+                string current_prototype = new string(PrototypeName);
+                Stack<IRenameRules> preview_stack = new Stack<IRenameRules>(currentRules_stack.Reverse());
 
-                if (rule_prototype != "")
+                while (preview_stack.Count != 0)
                 {
-                    char rule_prototype_first = rule_prototype[0];
-                    char rule_prototype_second = rule_prototype[1];
+                    IRenameRules currentRules = (IRenameRules)preview_stack.Pop().Clone();
+                    string rule_prototype = currentRules.stringPrototype();
 
-                    int colon = current_prototype.IndexOf(rule_prototype_first) + 1;
-                    int hash = current_prototype.IndexOf(rule_prototype_second, colon);
-                    if(colon == 0 || hash == -1)
+                    if (rule_prototype != "")
                     {
-                        //Colon == 0 vi` -1 +1 = 0
-                        MessageBox.Show("There are incorrections in the preview box!\n Please try to type it correctly");
-                        break;
+                        char rule_prototype_first = rule_prototype[0];
+                        char rule_prototype_second = rule_prototype[1];
+
+                        int colon = current_prototype.IndexOf(rule_prototype_first) + 1;
+                        int hash = current_prototype.IndexOf(rule_prototype_second, colon);
+                        if (colon == 0 || hash == -1)
+                        {
+                            //Colon == 0 vi` -1 +1 = 0
+                            MessageBox.Show("There are incorrections in the preview box!\n Please try to type it correctly");
+                            break;
+                        }
+                        string result = current_prototype.Substring(colon, hash - colon);
+                        current_prototype = current_prototype.Substring(hash + 1, current_prototype.Length - hash - 1);
+
+                        currentRules.parseData(result);
                     }
-                    string result = current_prototype.Substring(colon, hash - colon);
-                    current_prototype = current_prototype.Substring(hash + 1, current_prototype.Length - hash - 1);
 
-                    currentRules.parseData(result);
+
+                    foreach (text file in files)
+                    {
+                        file.NewName = currentRules.Rename(file.NewName);
+                    }
+
+                    foreach (text file in folders)
+                    {
+                        file.NewName = currentRules.Rename(file.NewName);
+                    }
+
                 }
-
-
-                foreach (text file in files)
-                {
-                    file.NewName = currentRules.Rename(file.NewName);
-                }
-
-                foreach (text file in folders)
-                {
-                    file.NewName = currentRules.Rename(file.NewName);
-                }
-
             }
-            
+            catch (Exception ex)
+            {
+                MessageBox.Show("There is an errors in parameters");
+            }
             
 
 
@@ -614,7 +620,17 @@ namespace DynamicBatchRename
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            string result = PresetReader.getInstance().parsePreset(PrototypeName,currentRules_stack);
+
+            string result = "";
+
+            try
+            {
+                result = PresetReader.getInstance().parsePreset(PrototypeName, currentRules_stack);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("There is an error in parameters");
+            }
             SavePreset savePreset_screen = new SavePreset(result);
            if(savePreset_screen.ShowDialog() == true)
             {
