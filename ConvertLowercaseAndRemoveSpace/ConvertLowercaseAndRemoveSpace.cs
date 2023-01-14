@@ -42,7 +42,7 @@ namespace ConvertLowercaseAndRemoveSpace
 
         public string stringPrototype()
         {
-            return "";
+            return "()";
         }
     }
 }

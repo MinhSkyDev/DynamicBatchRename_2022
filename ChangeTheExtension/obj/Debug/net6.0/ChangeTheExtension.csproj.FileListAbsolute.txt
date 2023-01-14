@@ -1,0 +1,15 @@
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ChangeTheExtension\obj\Debug\net6.0\ChangeTheExtension.csproj.AssemblyReference.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ChangeTheExtension\obj\Debug\net6.0\ChangeTheExtension.GeneratedMSBuildEditorConfig.editorconfig
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ChangeTheExtension\obj\Debug\net6.0\ChangeTheExtension.AssemblyInfoInputs.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ChangeTheExtension\obj\Debug\net6.0\ChangeTheExtension.AssemblyInfo.cs
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ChangeTheExtension\obj\Debug\net6.0\ChangeTheExtension.csproj.CoreCompileInputs.cache
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ChangeTheExtension\bin\Debug\net6.0\ChangeTheExtension.deps.json
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ChangeTheExtension\bin\Debug\net6.0\ChangeTheExtension.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ChangeTheExtension\bin\Debug\net6.0\ChangeTheExtension.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ChangeTheExtension\bin\Debug\net6.0\IRenameRules.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ChangeTheExtension\bin\Debug\net6.0\IRenameRules.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ChangeTheExtension\obj\Debug\net6.0\ChangeTheExtension.csproj.CopyComplete
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ChangeTheExtension\obj\Debug\net6.0\ChangeTheExtension.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ChangeTheExtension\obj\Debug\net6.0\refint\ChangeTheExtension.dll
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ChangeTheExtension\obj\Debug\net6.0\ChangeTheExtension.pdb
+D:\K20 FIT HCMUS\Ltrinh win Csharp\Đồ án 1\App\DynamicBatchRename\ChangeTheExtension\obj\Debug\net6.0\ref\ChangeTheExtension.dll
